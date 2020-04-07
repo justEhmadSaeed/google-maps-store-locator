@@ -19,3 +19,35 @@ body {
   top: 80px;
   left: 80px;
 }
+.search-container {
+  position: absolute;
+  z-index: 100;
+  left: 80px;
+  top: 200px;
+  width: 400px;
+  height: 60px;
+  background-color: #454e53;
+  border-radius: 30px;
+  display: flex;
+}
+.search-container .search {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#zipcode-input {
+  font-size: 25px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+#zipcode-input:focus {
+    outline: none;
+}
+.search i{
+    font-size: 25px;
+    color: white;
+}
