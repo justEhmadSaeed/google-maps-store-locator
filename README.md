@@ -6,7 +6,7 @@
 
 - ✔ Create Wireframes
 - ✔ Set Up the Base HTML Structure
-- 🤞 Import Google Maps into the Web Page
+- ✔ Import Google Maps into the Web Page
 - 🤞 Add the Text Store Locator
 - 🤞 Add Input Box
 - 🤞 Add Store List Container
