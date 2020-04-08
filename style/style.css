@@ -13,7 +13,7 @@ body {
   position: absolute;
   z-index: 100;
   text-transform: uppercase;
-  font-size: 80px;
+  font-size: 70px;
   font-weight: bold;
   color: #333;
   top: 80px;
@@ -23,7 +23,7 @@ body {
   position: absolute;
   z-index: 100;
   left: 80px;
-  top: 200px;
+  top: 180px;
   width: 400px;
   height: 60px;
   background-color: #454e53;
@@ -45,9 +45,19 @@ body {
   color: white;
 }
 #zipcode-input:focus {
-    outline: none;
+  outline: none;
 }
-.search i{
-    font-size: 25px;
-    color: white;
+.search i {
+  font-size: 25px;
+  color: white;
+}
+.stores-list-container {
+  width: 400px;
+  position: absolute;
+  z-index: 100;
+  left: 80px;
+  top: 260px;
+  background-color: white;
+  border-radius: 30px;
+  bottom: 20px;
 }
