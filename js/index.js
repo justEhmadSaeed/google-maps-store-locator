@@ -1,10 +1,10 @@
 function initMap() {
-  var sydney = {
-    lat: -33.863276,
-    lng: 151.107977,
+  var losAngeles = {
+    lat: 34.063380,
+    lng: -118.358080,
   };
   map = new google.maps.Map(document.getElementById("map"), {
-    center: sydney,
+    center: losAngeles,
     zoom: 11,
     mapTypeId: "roadmap",
   });

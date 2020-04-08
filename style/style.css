@@ -61,3 +61,20 @@ body {
   border-radius: 30px;
   bottom: 20px;
 }
+.stores-list {
+}
+.stores-container {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+.store-phone-number{
+    margin-top: 5px;
+    font-size: small;
+    color: rgb(134, 131, 131);
+}
+.stores-container:hover {
+  background-color: #373e42;
+  color: white;
+  opacity: 50%;
+}
