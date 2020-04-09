@@ -52,7 +52,7 @@ body {
   color: white;
 }
 .stores-list-container {
-  width: 360px;
+  width: 400px;
   position: absolute;
   z-index: 100;
   left: 80px;
@@ -60,6 +60,13 @@ body {
   background-color: white;
   border-radius: 30px;
   bottom: 20px;
+  padding: 0 0px 30px;
+  display: flex;
+  overflow-y: hidden;
+}
+.stores-list{
+  flex-grow: 1;
+  overflow-y: scroll;
   padding: 0 20px;
 }
 .stores-container {

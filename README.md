@@ -11,7 +11,7 @@
 - ✔ Add Input Box
 - ✔ Add Store List Container
 - ✔ Add Individual Store Container
-- 🛠 Show all the stores in the stores list based on real world data
+- ✔ Show all the stores in the stores list based on real world data
 - 🛠 Show the Marker based on real world store data
 - 🛠 Show the Info Window when you click on the Individual store
 - 🛠 Add a Beautiful Transition on the hover of the Individual Store
