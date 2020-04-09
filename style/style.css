@@ -60,7 +60,7 @@ body {
   background-color: white;
   border-radius: 30px;
   bottom: 20px;
-  padding: 0 0px 30px;
+  padding-bottom: 20px;
   display: flex;
   overflow-y: hidden;
 }
