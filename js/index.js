@@ -39,6 +39,7 @@ const displayStores = () => {
 };
 
 const showStoresMarker = () => {
+  var bounds = new google.maps.LatLngBounds();
   stores.forEach((store, count) => {
     let latlng = new google.maps.LatLng(
       store.coordinates.latitude,
@@ -46,8 +47,10 @@ const showStoresMarker = () => {
     );
     let name = store.name;
     let address = store.address[0];
+    bounds.extend(latlng);
     createMarker(latlng, name, address, count + 1);
-  });
+  })
+  map.fitBounds(bounds);
 };
 
 const createMarker = (latlng, name, address, count) => {
@@ -55,6 +58,7 @@ const createMarker = (latlng, name, address, count) => {
   var marker = new google.maps.Marker({
     map: map,
     position: latlng,
+    label: count.toString()
   });
   /* google.maps.event.addListener(marker, "click", function () {
     infoWindow.setContent(html);
