@@ -14,6 +14,7 @@ function initMap() {
     zoom: 11,
     mapTypeId: "roadmap",
   });
+  infoWindow = new google.maps.InfoWindow();
   showStoresMarker();
 }
 
@@ -46,10 +47,10 @@ const showStoresMarker = () => {
       store.coordinates.longitude
     );
     let name = store.name;
-    let address = store.address[0];
+    let address = store.addressLines[0];
     bounds.extend(latlng);
     createMarker(latlng, name, address, count + 1);
-  })
+  });
   map.fitBounds(bounds);
 };
 
@@ -58,11 +59,11 @@ const createMarker = (latlng, name, address, count) => {
   var marker = new google.maps.Marker({
     map: map,
     position: latlng,
-    label: count.toString()
+    label: count.toString(),
   });
-  /* google.maps.event.addListener(marker, "click", function () {
+  google.maps.event.addListener(marker, "click", function () {
     infoWindow.setContent(html);
     infoWindow.open(map, marker);
-  }); */
+  });
   markers.push(marker);
 };
