@@ -1,6 +1,5 @@
 window.onload = () => {
-  displayStores();
-  setOnClickListener();
+  displayStores(stores);
 };
 
 var map;
@@ -18,12 +17,36 @@ function initMap() {
     mapTypeId: "roadmap",
   });
   infoWindow = new google.maps.InfoWindow();
-  showStoresMarker();
+  searchStores();
 }
+
+const searchStores = () => {
+  let foundStores = [];
+  let zipCode = document.getElementById("zipcode-input").value;
+  if (zipCode) {
+    stores.forEach((store) => {
+      let postal = store.address.postalCode.substring(0, 5);
+      if (zipCode === postal) foundStores.push(store);
+    });
+  } else foundStores = stores;
+
+  clearLocation();
+  displayStores(foundStores);
+  showStoresMarker(foundStores);
+  setOnClickListener();
+};
+
+const clearLocation = () => {
+  infoWindow.close();
+  for (var i = 0; i < markers.length; i++) {
+    markers[i].setMap(null);
+  }
+  markers.length = 0;
+};
 
 const setOnClickListener = () => {
   let storeElements = document.querySelectorAll(".stores-container");
-
+  console.log(storeElements);
   storeElements.forEach((element, index) => {
     element.addEventListener("click", () => {
       google.maps.event.trigger(markers[index], "click");
@@ -31,7 +54,7 @@ const setOnClickListener = () => {
   });
 };
 
-const displayStores = () => {
+const displayStores = (stores) => {
   storesHTML = "";
   stores.forEach((store, count) => {
     storesHTML += `
@@ -52,7 +75,7 @@ const displayStores = () => {
   });
 };
 
-const showStoresMarker = () => {
+const showStoresMarker = (stores) => {
   var bounds = new google.maps.LatLngBounds();
   stores.forEach((store, count) => {
     let latlng = new google.maps.LatLng(

@@ -50,6 +50,7 @@ body {
 .search i {
   font-size: 25px;
   color: white;
+  cursor: pointer;
 }
 .stores-list-container {
   width: 400px;
