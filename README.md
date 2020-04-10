@@ -13,9 +13,11 @@
 - ✔ Add Individual Store Container
 - ✔ Show all the stores in the stores list based on real world data
 - ✔ Show the Marker based on real world store data
-- ✔ Show the Basic Info Window 
-- 🛠 Show the Info Window when you click on the Individual store
-- 🛠 Add a Beautiful Transition on the hover of the Individual Store
+- ✔ Show the Basic Info Window
+- 🛠 Complete the styling for the marker info window
+- 🛠 Open the Info Window marker on store Selection in Stores List
+- 🛠 Allow the user to search for the stores in a zip code
+- 🛠 Add a Beautiful Transition on the hover of an Individual Store
 
 ## WireFrame
 
