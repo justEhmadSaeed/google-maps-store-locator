@@ -13,7 +13,7 @@ body {
   position: absolute;
   z-index: 100;
   text-transform: uppercase;
-  font-size: 70px;
+  font-size: 65px;
   font-weight: bold;
   color: #333;
   top: 80px;
@@ -103,4 +103,36 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.store-info-window{
+  min-width: 200px;
+  font-size: 14px;
+  padding: 8px;  
+}
+.store-info-name{
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(0, 0, 0, .87);
+}
+.store-info-status{
+  margin-top: 6px;
+  border-bottom: 1px solid #00000029;
+  padding-bottom: 6px;
+}
+.store-info-address, .store-info-phone{
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+.store-info-address .circle, .store-info-phone .circle{
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #1985A1;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
 }

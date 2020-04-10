@@ -1,6 +1,6 @@
 # Google Maps Store Locator App
 
-- A Javascript Challenge to build a Google Maps App
+- A Javascript Project to build an App to locate stores at the Google Maps
 
 ## Plan Of Action
 
@@ -14,7 +14,7 @@
 - ✔ Show all the stores in the stores list based on real world data
 - ✔ Show the Marker based on real world store data
 - ✔ Show the Basic Info Window
-- 🛠 Complete the styling for the marker info window
+- ✔ Complete the styling for the marker info window
 - 🛠 Open the Info Window marker on store Selection in Stores List
 - 🛠 Allow the user to search for the stores in a zip code
 - 🛠 Add a Beautiful Transition on the hover of an Individual Store

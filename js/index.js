@@ -48,14 +48,44 @@ const showStoresMarker = () => {
     );
     let name = store.name;
     let address = store.addressLines[0];
+    let openStatus = store.openStatusText;
+    let phoneNumber = store.phoneNumber;
     bounds.extend(latlng);
-    createMarker(latlng, name, address, count + 1);
+    createMarker(latlng, name, address, openStatus, phoneNumber, count + 1);
   });
   map.fitBounds(bounds);
 };
 
-const createMarker = (latlng, name, address, count) => {
-  var html = "<b>" + name + "</b> <br/>" + address;
+const createMarker = (
+  latlng,
+  name,
+  address,
+  openStatus,
+  phoneNumber,
+  count
+) => {
+  var html = `
+    <div class = "store-info-window">
+      <div class = "store-info-name">
+        ${name}
+      </div>
+      <div class = "store-info-status">
+        ${openStatus}
+      </div>
+      <div class = "store-info-address">
+        <div class = "circle">
+          <i class = "fas fa-location-arrow"></i>
+        </div>
+        ${address}
+      </div>
+      <div class ="store-info-phone">
+        <div class = "circle">
+          <i class = "fas fa-phone-alt"></i>
+        </div>
+        ${phoneNumber}
+      </div>
+    </div>
+  `;
   var marker = new google.maps.Marker({
     map: map,
     position: latlng,
