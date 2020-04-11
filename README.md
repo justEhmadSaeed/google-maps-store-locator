@@ -1,6 +1,7 @@
 # Google Maps Store Locator App
 
 - A Javascript Project to build an App to locate stores at the Google Maps
+- If the map is not showing... Apologies (the API key might have been disabled LOL)
 
 ## Plan Of Action
 
