@@ -72,8 +72,20 @@ body {
   padding: 0 20px;
 }
 .stores-container {
-  border-bottom: 1px solid #979797;
   display: flex;
+}
+.store-container-background {
+  display: flex;
+  flex-grow: 1;
+  border-radius: 18px;
+  padding: 0 8px;
+  margin: 12px 0;
+  border-bottom: 1px solid #979797;
+  transition: all 0.2s ease-in-out;
+}
+
+.store-container-background:hover {
+  background-color: #ccc;
 }
 .store-info-container{
   flex-grow: 1;
@@ -105,20 +117,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.store-container-background {
-  display: flex;
-  flex-grow: 1;
-  border-radius: 18px;
-  padding-left: 8px;
-  padding-right: 8px;
-  margin-bottom: 12px;
-  margin-top: 12px;
-  transition: all 0.2s ease-in-out;
-}
-
-.store-container-background:hover {
-  background-color: #ccc;
 }
 .store-info-window{
   min-width: 200px;

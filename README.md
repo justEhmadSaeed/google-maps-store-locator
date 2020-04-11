@@ -17,7 +17,7 @@
 - ✔ Complete the styling for the marker info window
 - ✔ Open the Info Window marker on store Selection in Stores List
 - ✔ Allow the user to search for the stores in a zip code
-- 🛠 Add a Beautiful Transition on the hover of an Individual Store
+- ✔ Add a Beautiful Transition on the hover of an Individual Store
 
 ## WireFrame
 

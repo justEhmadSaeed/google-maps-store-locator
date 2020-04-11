@@ -29,7 +29,7 @@ const searchStores = () => {
       if (zipCode === postal) foundStores.push(store);
     });
   } else foundStores = stores;
-
+  if (foundStores=== []) foundStores = stores;
   clearLocation();
   displayStores(foundStores);
   showStoresMarker(foundStores);
@@ -46,7 +46,6 @@ const clearLocation = () => {
 
 const setOnClickListener = () => {
   let storeElements = document.querySelectorAll(".stores-container");
-  console.log(storeElements);
   storeElements.forEach((element, index) => {
     element.addEventListener("click", () => {
       google.maps.event.trigger(markers[index], "click");
@@ -58,7 +57,8 @@ const displayStores = (stores) => {
   storesHTML = "";
   stores.forEach((store, count) => {
     storesHTML += `
-        <div class="stores-container">
+      <div class="stores-container">
+        <div class="store-container-background">
           <div class="store-info-container">
             <div class="store-address">
               <span>${store.addressLines[0]}</span>
@@ -70,6 +70,7 @@ const displayStores = (stores) => {
             <div class="store-number">${count + 1}</div>
           </div>
         </div>
+      </div>
     `;
     document.querySelector(".stores-list").innerHTML = storesHTML;
   });
