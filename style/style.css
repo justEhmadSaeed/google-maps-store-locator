@@ -66,7 +66,7 @@ body {
   overflow-y: hidden;
   cursor: pointer;
 }
-.stores-list{
+.stores-list {
   flex-grow: 1;
   overflow-y: scroll;
   padding: 0 20px;
@@ -87,7 +87,7 @@ body {
 .store-container-background:hover {
   background-color: #ccc;
 }
-.store-info-container{
+.store-info-container {
   flex-grow: 1;
 }
 .store-address {
@@ -102,47 +102,49 @@ body {
 .store-address span {
   display: block;
 }
-.store-number-container{
+.store-number-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.store-number{
+.store-number {
   width: 30px;
   height: 30px;
-  background-color: #454E53;
-  color: #B5ADAD;
+  background-color: #454e53;
+  color: #b5adad;
   border-radius: 50%;
   font-size: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.store-info-window{
+.store-info-window {
   min-width: 200px;
   font-size: 14px;
-  padding: 8px;  
+  padding: 8px;
 }
-.store-info-name{
+.store-info-name {
   font-size: 20px;
   font-weight: bold;
-  color: rgb(0, 0, 0, .87);
+  color: rgb(0, 0, 0, 0.87);
 }
-.store-info-status{
+.store-info-status {
   margin-top: 6px;
   border-bottom: 1px solid #00000029;
   padding-bottom: 6px;
 }
-.store-info-address, .store-info-phone{
+.store-info-address,
+.store-info-phone {
   margin-top: 8px;
   display: flex;
   align-items: center;
 }
-.store-info-address .circle, .store-info-phone .circle{
+.store-info-address .circle,
+.store-info-phone .circle {
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background-color: #1985A1;
+  background-color: #1985a1;
   color: white;
   display: flex;
   align-items: center;

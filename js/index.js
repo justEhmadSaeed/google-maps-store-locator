@@ -29,7 +29,7 @@ const searchStores = () => {
       if (zipCode === postal) foundStores.push(store);
     });
   } else foundStores = stores;
-  if (foundStores=== []) foundStores = stores;
+  if (foundStores === []) foundStores = stores;
   clearLocation();
   displayStores(foundStores);
   showStoresMarker(foundStores);
